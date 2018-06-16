@@ -4,7 +4,10 @@
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) 11: Express and Babel ======",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test-watch": "jest --watchAll",
+    "test": "jest"
   },
   "repository": {
     "type": "git",

@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/icathaid/11-express#readme",
   "dependencies": {
-    "dotenv": "^6.0.0"
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "uuid": "^3.2.1"
   }
 }

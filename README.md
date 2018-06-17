@@ -1,11 +1,12 @@
 delete comments in final push
 
+52:00 in video what to test
 
-# Stupid Bugs
-  * named the parser file router.js and the router file parser.js.
-      - forced me to go through each line of code to figure out where the 'signal' was going and where it was breaking.
+
+## Questions
+  * ![lecture vid](https://www.youtube.com/watch?v=oEaTXfEEKxI) around 23:00, i never got the live test results working.  How does John do this?
+
   
-
 
 ![cf](https://i.imgur.com/7v5ASc8.png) 11: Express and Babel
 ======

@@ -23,7 +23,7 @@ let readFilePromise = function(filename) {
 // of promises, and then do a promise.all() on all of them, which runs
 // when they are all completed.
 storage.getAll = () => {
-  return new Promise( (resolve,reject) => {jsonjson
+  return new Promise( (resolve,reject) => {
     // First, get all of the files in our data directory, if there are any
     fs.readdir(dataDirectory, (err,files) => {
       if(err) { reject(err); }

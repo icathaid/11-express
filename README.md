@@ -7,6 +7,11 @@ delete comments in final push
   
 
 
+## Questions
+  * ![lecture vid](https://www.youtube.com/watch?v=oEaTXfEEKxI) around 23:00, i never got the live test results working.  How does John do this?
+
+  
+
 ![cf](https://i.imgur.com/7v5ASc8.png) 11: Express and Babel
 ======
 

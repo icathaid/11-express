@@ -1,7 +1,9 @@
 'use strict';
 
-const router = require('../lib/router.js');
+// const router = require('../lib/router.js');
 const Notes = require('../models/notes.js');
+const express = require('express');
+const router = express.Router();
 
 /**
  * Simple method to send a JSON response (all of the API methods will use this)
@@ -57,4 +59,4 @@ router.post('/api/v1/notes', (req,res) => {
 
 });
 
-module.exports = {};
+module.exports = router;

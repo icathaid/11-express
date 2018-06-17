@@ -29,15 +29,16 @@ let serverError = (res,err) => {
 
 router.get('/api/v1/notes', (req,res) => {
   if ( req.query.id ) {
-    Notes.findOne(req.query.id)
-      .then( data => sendJSON(res,data) )
-      .catch( err => serverError(res,err) );
-  }
-  else {
     Notes.fetchAll()
       .then( data => sendJSON(res,data) )
       .catch( err => serverError(res,err) );
   }
+});
+
+router.get('/api/v1/notes/:id', (req,res) => {
+    Notes.findOne(req.params.id)
+      .then( data => sendJSON(res,data) )
+      .catch( err => serverError(res,err) );
 });
 
 router.delete('/api/v1/notes', (req,res) => {

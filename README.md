@@ -1,10 +1,6 @@
 delete comments in final push
 
-
-# Stupid Bugs
-  * named the parser file router.js and the router file parser.js.
-      - forced me to go through each line of code to figure out where the 'signal' was going and where it was breaking.
-  
+52:00 in video what to test
 
 
 ## Questions

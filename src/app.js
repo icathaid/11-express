@@ -8,6 +8,8 @@ const app = express();
 // Our modules
 // const router = require('./lib/router.js');
 const api = require('./api/api.js');
+app.use(express.json());
+app.use(api);
 
 // console.log(router);
 

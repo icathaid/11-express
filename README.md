@@ -1,3 +1,12 @@
+delete comments in final push
+
+
+# Stupid Bugs
+  * named the parser file router.js and the router file parser.js.
+      - forced me to go through each line of code to figure out where the 'signal' was going and where it was breaking.
+  
+
+
 ![cf](https://i.imgur.com/7v5ASc8.png) 11: Express and Babel
 ======
 

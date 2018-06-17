@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/icathaid/11-express/issues"
   },
-  "homepage": "https://github.com/icathaid/11-express#readme"
+  "homepage": "https://github.com/icathaid/11-express#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0"
+  }
 }

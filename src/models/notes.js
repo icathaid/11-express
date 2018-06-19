@@ -16,8 +16,10 @@ class Note{
   constructor(config) {
     this.id = uuid();
     this.createdOn = new Date();
+    //  rename these and come up with 3 new ones
     this.title = config && config.title || '';
     this.content = config && config.content || '';
+    
   }
 
   /**

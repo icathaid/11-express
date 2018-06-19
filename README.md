@@ -1,6 +1,6 @@
 delete comments in final push
 
-52:00 in video what to test
+
 
 
 ## Questions

@@ -28,17 +28,19 @@ let serverError = (res,err) => {
 };
 
 router.get('/api/v1/notes', (req,res) => {
-  if ( req.query.id ) {
     Notes.fetchAll()
       .then( data => sendJSON(res,data) )
       .catch( err => serverError(res,err) );
-  }
 });
 
 router.get('/api/v1/notes/:id', (req,res) => {
-    Notes.findOne(req.params.id)
+    if(req.params.id){
+      Notes.findOne(req.params.id)
       .then( data => sendJSON(res,data) )
       .catch( err => serverError(res,err) );
+    } else {
+      serverError(res, 'No Record Found');
+    }
 });
 
 router.delete('/api/v1/notes', (req,res) => {
@@ -52,12 +54,13 @@ router.delete('/api/v1/notes', (req,res) => {
 });
 
 router.post('/api/v1/notes', (req,res) => {
-
+  console.log(req.body, 'req.body');
+  console.log(req.body.title, 'req.body.title');
+  console.log(req.body.content, 'req.body.content');
   let record = new Notes(req.body);
   record.save()
     .then(data => sendJSON(res,data))
     .catch(console.error);
-
 });
 
 module.exports = router;

@@ -16,12 +16,11 @@ class Note{
   constructor(config) {
     this.id = uuid();
     this.createdOn = new Date();
-    //  rename these
-    this.thing1 = config && config.thing1 || '';
-    this.thing2 = config && config.thing2 || '';
-    this.thing3 = config && config.thing3 || '';
-    this.thing4 = config && config.thing4 || '';
-    this.thing5 = config && config.thing5 || '';
+    this.make = config && config.make || '';
+    this.model = config && config.model || '';
+    this.color = config && config.color || '';
+    this.size = config && config.size || '';
+    this.drivetrain = config && config.drivetrain || '';
   }
 
   /**

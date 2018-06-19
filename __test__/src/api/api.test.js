@@ -2,7 +2,7 @@
 
 const api = require('../../../src/api/api.js');
 //  need to install superagent via package.json script?
-// const superagent = require('superagent');
+const superagent = require('superagent');
 
 describe('test test', () => {
   it('Should make travis shut up', () => {

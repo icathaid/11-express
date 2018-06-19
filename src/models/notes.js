@@ -2,8 +2,10 @@
 
 // Models should offload their data storage to another module/system.
 // Here, we'll be using a custom data store module of our own creation
-const storage = require('../lib/storage/data-store.js');
-const uuid = require('uuid/v1');
+// const storage = require('../lib/storage/data-store.js');
+import storage from '../lib/storage/data-store.js';
+// const uuid = require('uuid/v1');
+import uuid from 'uuid/v1';
 
 class Note{
 
@@ -62,4 +64,5 @@ class Note{
 
 }
 
-module.exports = Note;
+export default Note;
+// module.exports = Note;

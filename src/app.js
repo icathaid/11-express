@@ -2,12 +2,14 @@
 
 // First Party Modules
 // let http = require('http');
-const express = require('express');
+import express from 'express';
+// const express = require('express');
 const app = express();
 
 // Our modules
 // const router = require('./lib/router.js');
-const api = require('./api/api.js');
+// const api = require('./api/api.js');
+import api from './api/api.js';
 app.use(express.json());
 app.use(api);
 
